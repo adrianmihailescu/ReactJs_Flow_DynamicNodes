@@ -1,0 +1,45 @@
+.group-node {
+    background-color: #E0F7FA; /* Light Azure */
+    border: 2px solid #0288D1; /* Deep Azure Border */
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: grab; /* Makes it visually draggable */
+    user-select: none; /* Prevents text selection during dragging */
+    pointer-events: auto; /* Ensures interactions are allowed */
+    width: 150px; /* Set a fixed width if needed */
+    text-align: center; /* Center text */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+
+      /* Flexbox for Vertical Centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow node to grow */
+  }
+  
+  .group-node-header {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center children vertically */
+    align-items: center;
+    flex-grow: 1; /* Ensures body fills available space */
+  }
+  
+  .group-node-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center children vertically */
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+  }
+
+  /* Handle styles */
+    .react-flow__handle {
+    background: #0288D1 !important;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
